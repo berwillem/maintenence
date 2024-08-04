@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      function updateTime() {
+        const timeElement = document.getElementById("currentTime");
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, "0");
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        const seconds = now.getSeconds().toString().padStart(2, "0");
+        timeElement.textContent = `${hours}:${minutes}:${seconds}`;
+      }
+      setInterval(updateTime, 1000);
+    </script>
+  </head>
+  <body>
+    <nav>
+      <h3>by binnovant</h3>
+      <h3 id="currentTime">time</h3>
+    </nav>
+    <div class="content">
+      <div class="buttons">
+        <button>Contact support</button>
+        <button>Click for a surprise</button>
+      </div>
+      <h1>
+        Page under <br />
+        Construction
+      </h1>
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>
