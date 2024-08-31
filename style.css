@@ -49,13 +49,13 @@ nav {
   min-width: 200px;
 }
 
-.buttons button:first-child {
+.buttons a .contact{
   background-color: #fab619;
   color: #fff;
   border: none;
 }
 
-.buttons button:last-child {
+.buttons a .localistaion {
   background-color: #fff;
   color: #fab619;
   border: 1px solid #fab619;
